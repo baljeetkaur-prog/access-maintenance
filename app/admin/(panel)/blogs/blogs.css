@@ -1,0 +1,247 @@
+
+.admin-blogs-page {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 36px;
+  color: #171717;
+  background: #f5f6f8;
+  box-sizing: border-box;
+}
+
+.admin-blogs-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.admin-blogs-eyebrow {
+  margin: 0 0 10px;
+  color: #93d22c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.admin-blogs-heading h1 {
+  margin: 0 0 8px;
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 750;
+}
+
+.admin-blogs-heading p:not(.admin-blogs-eyebrow) {
+  margin: 0;
+  color: #737373;
+  line-height: 1.6;
+}
+
+.admin-blogs-add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: 1px solid #93d22c;
+  border-radius: 4px;
+  background: #93d22c;
+  color: #17210b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.admin-blogs-add:hover {
+  border-color: #82c11d;
+  background: #82c11d;
+}
+
+.admin-blogs-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #e8e9ec;
+  border-radius: 4px;
+}
+
+.admin-blogs-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-blogs-table th,
+.admin-blogs-table td {
+  padding: 17px 20px;
+  border-bottom: 1px solid #e8e9ec;
+  vertical-align: middle;
+}
+
+.admin-blogs-table th {
+  background: #f5f6f8;
+  color: #505050;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  white-space: nowrap;
+}
+
+.admin-blogs-table td {
+  color: #444;
+  font-size: 14px;
+}
+
+.admin-blogs-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-blogs-table tbody tr:hover {
+  background: #fafbf9;
+}
+
+.admin-blogs-table td strong,
+.admin-blogs-slug {
+  display: block;
+}
+
+.admin-blogs-table td strong {
+  color: #171717;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.admin-blogs-slug {
+  margin-top: 6px;
+  color: #737373;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.admin-blogs-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.admin-blogs-status.published {
+  background: #eff8e3;
+  color: #426d13;
+}
+
+.admin-blogs-status.draft {
+  background: #f3f4f2;
+  color: #60645e;
+}
+
+.admin-blogs-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
+}
+
+.admin-blogs-actions a {
+  color: #426d13;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.admin-blogs-actions a:hover {
+  color: #82bd25;
+}
+
+.admin-blogs-actions button {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #b42318;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.admin-blogs-actions button:hover {
+  color: #8f1c13;
+}
+
+.admin-blogs-empty {
+  padding: 48px 24px;
+  background: #fff;
+  border: 1px solid #e8e9ec;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.admin-blogs-empty h2 {
+  margin: 0 0 10px;
+  color: #171717;
+  font-size: 20px;
+}
+
+.admin-blogs-empty p,
+.admin-blogs-message {
+  color: #737373;
+  line-height: 1.6;
+}
+
+.admin-blogs-error {
+  color: #b42318;
+}
+
+@media (max-width: 768px) {
+  .admin-blogs-page {
+    padding: 24px;
+  }
+
+  .admin-blogs-table th,
+  .admin-blogs-table td {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-blogs-page {
+    padding: 18px 14px;
+  }
+
+  .admin-blogs-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  .admin-blogs-heading h1 {
+    font-size: 27px;
+  }
+
+  .admin-blogs-add {
+    align-self: flex-start;
+  }
+
+  .admin-blogs-table th,
+  .admin-blogs-table td {
+    padding: 13px;
+  }
+
+  .admin-blogs-table-wrap {
+    border-radius: 4px;
+  }
+
+  .admin-blogs-empty {
+    padding: 32px 18px;
+  }
+}

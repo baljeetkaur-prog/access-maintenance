@@ -1,0 +1,256 @@
+.industries-section {
+  width: 100%;
+  background: #f3f4f2;
+  color: #111111;
+  padding: 80px 0;
+}
+
+.industries-container {
+  width: min(1800px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.industries-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 60px;
+}
+
+.industries-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.industries-eyebrow-line {
+  width: 30px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #93d22c;
+}
+
+.industries-eyebrow span:last-child {
+  color: #5c655d;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.industries-heading-left h2 {
+  max-width: 750px;
+  margin: 25px 0 0;
+  color: #111111;
+  font-size: 45px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+.industries-heading-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.industries-heading-right p {
+  max-width: 590px;
+  margin: 4px 0 0;
+  color: #636a64;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+/* =========================
+   INDUSTRY LIST
+========================= */
+
+.industries-list {
+  width: 100%;
+  border-top: 1px solid #d9ddd9;
+}
+
+.industry-row {
+  display: grid;
+  grid-template-columns: 40px 1.25fr 1.5fr 150px;
+  gap: 35px;
+  align-items: center;
+  min-height: 125px;
+  border-bottom: 1px solid #d9ddd9;
+  color: inherit;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.industry-number {
+  color: #969d97;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+.industry-title h3 {
+  margin: 0;
+  color: #111111;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  transition: color 0.2s ease;
+}
+
+.industry-row:hover .industry-title h3 {
+  color: #2f460b;
+}
+
+.industry-description p {
+  max-width: 500px;
+  margin: 0;
+  color: #636a64;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.industry-link-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.industry-link {
+  color: #111111;
+  text-decoration: underline;
+  text-decoration-color: #111111;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 7px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.industry-row:hover .industry-link {
+  color: #2f460b;
+  text-decoration-color: #2f460b;
+}
+
+.industry-link:hover {
+  color: #4d700f;
+  text-decoration-color: #4d700f;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+  .industries-container {
+    width: min(100% - 50px, 1400px);
+  }
+
+  .industries-heading {
+    gap: 45px;
+  }
+
+  .industry-row {
+    grid-template-columns: 55px 1fr 1.4fr 130px;
+    gap: 25px;
+  }
+
+  .industry-title h3 {
+    font-size: 21px;
+  }
+
+  .industry-description p {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .industries-section {
+    padding: 70px 0;
+  }
+
+  .industries-container {
+    width: calc(100% - 40px);
+  }
+
+  .industries-heading {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+
+  .industries-heading-left h2 {
+    margin-top: 18px;
+    font-size: 30px;
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+  }
+
+  .industries-heading-right {
+    justify-content: flex-start;
+  }
+
+  .industries-heading-right p {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* =========================
+     MOBILE INDUSTRY ROW
+  ========================= */
+
+  .industry-row {
+    grid-template-columns: 45px 1fr;
+    gap: 0 15px;
+    align-items: start;
+    min-height: auto;
+    padding: 25px 0;
+  }
+
+  .industry-number {
+    padding-top: 3px;
+    font-size: 12px;
+  }
+
+  .industry-title h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .industry-description {
+    grid-column: 2;
+    margin-top: 12px;
+  }
+
+  .industry-description p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .industry-link-wrap {
+    grid-column: 2;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .industry-link {
+    font-size: 13px;
+  }
+}

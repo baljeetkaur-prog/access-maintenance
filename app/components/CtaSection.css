@@ -1,0 +1,131 @@
+.cta-section {
+  width: 100%;
+  background: #202b22;
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+.cta-container {
+  width: min(1800px, calc(100% - 80px));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.cta-content {
+  max-width: 800px;
+}
+
+.cta-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.cta-eyebrow-line {
+  width: 30px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #93d22c;
+}
+
+.cta-eyebrow span:last-child {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.cta-content h2 {
+  margin: 22px 0 0;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+.cta-content p {
+  max-width: 800px;
+  margin: 22px 0 0;
+  color: #c1cdc2;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+.cta-action {
+  flex-shrink: 0;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 54px;
+  padding: 0 27px;
+  background: #ffffff;
+  color: #111111;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #dbe7c1;
+  color: #111111;
+}
+
+.cta-button svg {
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .cta-container {
+    width: min(100% - 50px, 1400px);
+    gap: 40px;
+  }
+
+  .cta-content h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cta-section {
+    padding: 65px 0;
+  }
+
+  .cta-container {
+    width: calc(100% - 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .cta-content h2 {
+    margin-top: 18px;
+    font-size: 30px;
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+  }
+
+  .cta-content p {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .cta-button {
+    min-height: 50px;
+    padding: 0 22px;
+    font-size: 14px;
+  }
+}
