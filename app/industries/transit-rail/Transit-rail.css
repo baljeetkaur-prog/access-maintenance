@@ -1,0 +1,866 @@
+/* Main Page */
+.transit-rail-page {
+  width: 100%;
+  background: #f5f6f3;
+  color: #111111;
+}
+
+.transit-rail-container {
+  width: min(1800px, calc(100% - 60px));
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.transit-rail-hero {
+  width: 100%;
+  padding: 35px 0 110px;
+}
+
+/* Breadcrumb */
+.transit-rail-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #737a74;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.transit-rail-breadcrumb a {
+  color: #737a74;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.transit-rail-breadcrumb a:hover {
+  color: #2f460b;
+}
+
+/* Hero Content */
+.transit-rail-hero-heading {
+  width: 100%;
+  margin-top: 75px;
+}
+
+/* Small Label */
+.transit-rail-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.transit-rail-eyebrow-line {
+  width: 30px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #93d22c;
+}
+
+.transit-rail-eyebrow span:last-child {
+  color: #5c655d;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+/* Heading and Paragraph Row */
+.transit-rail-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 90px;
+  align-items: start;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.transit-rail-hero-grid h1 {
+  margin: 0;
+  padding: 0;
+  max-width: 650px;
+  color: #111111;
+  font-size: 56px;
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.transit-rail-hero-side {
+  width: 100%;
+  max-width: 500px;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+}
+
+.transit-rail-hero-side p {
+  margin: 0;
+  padding: 0;
+  color: #636a64;
+  font-size: 17px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+/* CTA Link */
+.transit-rail-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #111111;
+  color: #111111;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.transit-rail-cta:hover {
+  color: #557d19;
+  border-color: #557d19;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .transit-rail-container {
+    width: min(100% - 50px, 1400px);
+  }
+
+  .transit-rail-hero-heading {
+    margin-top: 60px;
+  }
+
+  .transit-rail-hero-grid {
+    column-gap: 50px;
+  }
+
+  .transit-rail-hero-grid h1 {
+    font-size: 46px;
+  }
+
+  .transit-rail-hero-side p {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .transit-rail-hero {
+    padding: 25px 0 75px;
+  }
+
+  .transit-rail-container {
+    width: calc(100% - 40px);
+  }
+
+  .transit-rail-breadcrumb {
+    font-size: 12px;
+  }
+
+  .transit-rail-hero-heading {
+    margin-top: 50px;
+  }
+
+  .transit-rail-eyebrow {
+    gap: 11px;
+  }
+
+  .transit-rail-eyebrow-line {
+    width: 25px;
+  }
+
+  .transit-rail-eyebrow span:last-child {
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+
+  .transit-rail-hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 18px;
+    margin-top: 8px;
+  }
+
+  .transit-rail-hero-grid h1 {
+    max-width: none;
+    font-size: 36px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .transit-rail-hero-side {
+    max-width: none;
+    justify-self: start;
+  }
+
+  .transit-rail-hero-side p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .transit-rail-cta {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+}
+
+/* Operating Environment Section */
+.transit-rail-environment {
+  width: 100%;
+  padding: 95px 0 110px;
+  background: #ffffff;
+  color: #111111;
+}
+
+.transit-rail-environment-label {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.transit-rail-environment-label-line {
+  width: 30px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #93d22c;
+}
+
+
+.transit-rail-environment-label span:last-child {
+  color: #5c655d;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.transit-rail-environment-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 90px;
+  align-items: start;
+  margin-bottom: 65px;
+}
+
+.transit-rail-environment-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px;
+}
+
+.transit-rail-environment-intro h2 {
+  max-width: 550px;
+  margin: 0;
+  color: #111111;
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1.3px;
+}
+
+.transit-rail-environment-intro > p {
+  max-width: 570px;
+  margin: 0;
+  color: #686e68;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.transit-rail-environment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 65px;
+  row-gap: 0;
+}
+
+.transit-rail-environment-item {
+  padding: 30px 0 32px;
+  border-top: 1px solid #d9ddd8;
+}
+
+.transit-rail-environment-item h3 {
+  margin: 0 0 13px;
+  color: #111111;
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+.transit-rail-environment-item p {
+  max-width: 500px;
+  margin: 0;
+  color: #686e68;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .transit-rail-environment {
+    padding: 80px 0 90px;
+  }
+
+  .transit-rail-environment-intro {
+    column-gap: 50px;
+  }
+
+  .transit-rail-environment-intro h2 {
+    font-size: 36px;
+  }
+
+  .transit-rail-environment-intro p {
+    font-size: 15px;
+  }
+
+  .transit-rail-environment-grid {
+    column-gap: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .transit-rail-environment {
+    padding: 60px 0 70px;
+  }
+
+.transit-rail-environment-label {
+  gap: 11px;
+  margin-bottom: 15px;
+}
+
+
+.transit-rail-environment-label-line {
+  width: 25px;
+}
+
+
+.transit-rail-environment-label span:last-child {
+  font-size: 11px;
+  letter-spacing: 0.8px;
+}
+
+.transit-rail-environment-intro {
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 18px;
+  margin-bottom: 40px;
+}
+.transit-rail-environment-heading {
+  gap: 10px;
+}
+
+.transit-rail-environment-intro h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.transit-rail-environment-intro > p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+  .transit-rail-environment-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .transit-rail-environment-item {
+    padding: 25px 0 27px;
+  }
+
+  .transit-rail-environment-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .transit-rail-environment-item p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+}
+/* Relevant Services Section */
+.transit-rail-services {
+  width: 100%;
+  padding: 100px 0 110px;
+  background: #f3f4f2;
+  color: #111111;
+}
+
+.transit-rail-services-heading {
+  margin-bottom: 45px;
+}
+
+.transit-rail-services-label {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.transit-rail-services-label-line {
+  width: 30px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #93d22c;
+}
+
+.transit-rail-services-label span:last-child {
+  color: #5c655d;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.transit-rail-services-heading h2 {
+  margin: 0;
+  color: #111111;
+  font-size: 45px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1.3px;
+}
+
+.transit-rail-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.transit-rail-service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  padding: 30px 28px 25px;
+  background: #ffffff;
+  border: 1px solid #d9ddd8;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.transit-rail-service-card:hover {
+  border-color: #93d22c;
+  cursor: pointer;
+}
+
+.transit-rail-service-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.transit-rail-service-card-top svg {
+  width: 34px;
+  height: 34px;
+  stroke: #252925;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.transit-rail-service-card-top > span {
+  color: #8a9089;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.transit-rail-service-card h3 {
+  margin: 0 0 15px;
+  color: #111111;
+  font-size: 25px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.transit-rail-service-card > p {
+  margin: 0 0 15px;
+  color: #686e68;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.transit-rail-service-tags {
+  margin-top: 0px;
+  padding-top: 17px;
+  color: #777d76;
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.transit-rail-service-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 22px;
+  color: #111111;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.transit-rail-service-link span {
+  color: #111111;
+  font-size: 17px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.transit-rail-service-link:hover,
+.transit-rail-service-link:hover span {
+  color: #6ba91a;
+}
+
+.transit-rail-service-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .transit-rail-services {
+    padding: 80px 0 90px;
+  }
+
+  .transit-rail-services-heading h2 {
+    font-size: 36px;
+  }
+
+  .transit-rail-services-grid {
+    gap: 18px;
+  }
+
+  .transit-rail-service-card {
+    padding: 26px 22px 23px;
+  }
+
+  .transit-rail-service-card h3 {
+    font-size: 21px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .transit-rail-services {
+    padding: 60px 0 70px;
+  }
+
+  .transit-rail-services-heading {
+    margin-bottom: 30px;
+  }
+
+  .transit-rail-services-label {
+    gap: 11px;
+    margin-bottom: 9px;
+  }
+
+  .transit-rail-services-label-line {
+    width: 25px;
+  }
+
+  .transit-rail-services-label span:last-child {
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+
+  .transit-rail-services-heading h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  .transit-rail-services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .transit-rail-service-card {
+    padding: 25px 22px 22px;
+  }
+
+  .transit-rail-service-card-top {
+    margin-bottom: 26px;
+  }
+
+  .transit-rail-service-card h3 {
+    font-size: 21px;
+  }
+
+  .transit-rail-service-card > p {
+    font-size: 14px;
+  }
+}
+/* First Conversation Section */
+.transit-rail-conversation {
+  width: 100%;
+  padding: 100px 30px 110px;
+  background: #ffffff;
+  color: #111111;
+}
+
+.transit-rail-conversation-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.transit-rail-conversation-label {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.transit-rail-conversation-label-line {
+  width: 30px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #93d22c;
+}
+
+.transit-rail-conversation-label span:last-child {
+  color: #5c655d;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.transit-rail-conversation h2 {
+  margin: 0 0 20px;
+  color: #111111;
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -1.3px;
+}
+
+.transit-rail-conversation p {
+  max-width: 1000px;
+  margin: 0;
+  color: #686e68;
+  font-size: 19px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .transit-rail-conversation {
+    padding: 80px 25px 90px;
+  }
+
+  .transit-rail-conversation h2 {
+    font-size: 36px;
+  }
+
+  .transit-rail-conversation p {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .transit-rail-conversation {
+    padding: 60px 20px 70px;
+  }
+
+  .transit-rail-conversation-label {
+    gap: 11px;
+    margin-bottom: 10px;
+  }
+
+  .transit-rail-conversation-label-line {
+    width: 25px;
+  }
+
+  .transit-rail-conversation-label span:last-child {
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+
+  .transit-rail-conversation h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 15px;
+  }
+
+  .transit-rail-conversation p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+}
+/* Footer CTA Section */
+.footer-cta-section {
+width: 100%;
+background: #e9eee3;
+color: #111111;
+padding: 75px 0;
+}
+
+.footer-cta-container {
+width: min(1800px, calc(100% - 80px));
+margin: 0 auto;
+}
+
+.footer-cta-eyebrow {
+display: flex;
+align-items: center;
+gap: 13px;
+}
+
+.footer-cta-eyebrow-line {
+width: 30px;
+height: 2px;
+flex-shrink: 0;
+background: #93d22c;
+}
+
+.footer-cta-eyebrow span:last-child {
+color: #4f584d;
+font-size: 12px;
+line-height: 1.4;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.9px;
+}
+
+.footer-cta-main {
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+gap: 50px;
+margin-top: 25px;
+}
+
+.footer-cta-text {
+flex: 1;
+min-width: 0;
+}
+
+.footer-cta-text h2 {
+margin: 0;
+color: #111111;
+font-size: 48px;
+line-height: 1.1;
+font-weight: 600;
+letter-spacing: -1.5px;
+}
+
+.footer-cta-text p {
+max-width: 650px;
+margin: 20px 0 0;
+color: #60695d;
+font-size: 16px;
+line-height: 1.75;
+font-weight: 400;
+}
+
+.footer-cta-action {
+flex-shrink: 0;
+margin-top: 4px;
+}
+
+.footer-cta-button {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+min-height: 52px;
+padding: 0 27px;
+background: #111111;
+color: #ffffff;
+text-decoration: none;
+font-size: 14px;
+line-height: 1;
+font-weight: 600;
+transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer-cta-button:hover {
+background: #2f460b;
+color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+.footer-cta-container {
+width: min(100% - 50px, 1400px);
+}
+
+.footer-cta-main {
+gap: 40px;
+}
+
+.footer-cta-text h2 {
+font-size: 38px;
+}
+}
+
+@media (max-width: 700px) {
+.footer-cta-section {
+padding: 65px 0;
+}
+
+.footer-cta-container {
+width: calc(100% - 40px);
+}
+
+.footer-cta-main {
+flex-direction: column;
+align-items: flex-start;
+gap: 0;
+margin-top: 18px;
+}
+
+.footer-cta-text {
+width: 100%;
+}
+
+.footer-cta-text h2 {
+font-size: 30px;
+line-height: 1.15;
+letter-spacing: -0.8px;
+}
+
+.footer-cta-text p {
+max-width: 650px;
+margin: 18px 0 0;
+font-size: 14px;
+line-height: 1.7;
+}
+
+.footer-cta-action {
+margin-top: 25px;
+}
+
+.footer-cta-button {
+min-height: 50px;
+padding: 0 22px;
+font-size: 13px;
+}
+}
+
+
+
+

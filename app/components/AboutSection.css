@@ -1,0 +1,395 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  width: 100%;
+  background: #ffffff;
+  color: #111111;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.about-container {
+  width: min(1800px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =========================
+   SECTOR ROW
+========================= */
+
+.about-sectors {
+  min-height: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.about-sector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  min-height: 50px;
+}
+
+.about-sector span {
+  color: #5c655d;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  text-align: center;
+}
+
+.about-sector-divider {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 28px;
+  background: #d9ddd9;
+  transform: translateY(-50%);
+}
+
+
+/* =========================
+   FULL WIDTH DIVIDERS
+========================= */
+
+.about-sectors-divider {
+  width: 100%;
+  height: 1px;
+  background: #d9ddd9;
+}
+
+
+/* =========================
+   EYEBROW
+========================= */
+
+.about-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-top: 85px;
+}
+
+.about-eyebrow-line {
+  width: 30px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #93d22c;
+}
+
+.about-eyebrow span:last-child {
+  color: #5c655d;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-top: 22px;
+}
+
+.about-intro h2 {
+  margin: 0;
+  color: #111111;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+.about-intro p {
+  max-width: 590px;
+  margin: 4px 0 0;
+  color: #636a64;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+
+/* =========================
+   APPROACH
+========================= */
+
+.about-approach {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-top: 40px;
+  padding-bottom: 100px;
+}
+
+
+/* =========================
+   FEATURE BOX
+========================= */
+
+.about-feature-box {
+  padding: 42px;
+  background: #f3f4f2;
+  border: 1px solid #dce1d8;
+}
+
+.about-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 28px;
+  color: #111111;
+  font-size: 30px;
+}
+
+.about-feature-box h3 {
+  margin: 0;
+  color: #111111;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.about-feature-box p {
+  max-width: 470px;
+  margin: 18px 0 0;
+  color: #636a64;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.about-feature-link {
+  display: inline-block;
+  margin-top: 50px;
+  color: #111111;
+  text-decoration: underline;
+  text-decoration-color: #111111;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.about-feature-link:hover {
+  color: #2f460b;
+  text-decoration-color: #2f460b;
+}
+
+
+/* =========================
+   RIGHT SITE POINTS
+========================= */
+
+.about-site-points {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-site-point {
+  padding: 0 0 20px;
+}
+
+.about-site-point + .about-site-point {
+  padding-top: 20px;
+}
+
+.about-site-point h3 {
+  margin: 0;
+  color: #111111;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.about-site-point p {
+  margin: 12px 0 0;
+  color: #636a64;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.about-point-divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 28px;
+  background: #d9ddd9;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .about-container {
+    width: min(100% - 50px, 1400px);
+  }
+
+  .about-intro {
+    gap: 45px;
+  }
+
+  .about-approach {
+    gap: 45px;
+  }
+
+  .about-intro h2 {
+    font-size: 40px;
+  }
+
+  .about-feature-box {
+    padding: 40px 35px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .about-container {
+    width: calc(100% - 40px);
+  }
+
+
+  /* SECTORS */
+.about-sectors {
+  min-height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px 0;
+}
+
+.about-sector {
+  min-height: 65px;
+  padding: 0 12px;
+  border: 0;
+}
+
+.about-sector span {
+  font-size: 12px;
+}
+
+/* Hide desktop dividers */
+
+.about-sector-divider {
+  display: none;
+}
+
+/* Horizontal divider between rows */
+
+.about-sector:nth-child(1),
+.about-sector:nth-child(2) {
+  border-bottom: 1px solid #d9ddd9;
+}
+
+/* Only two vertical divider segments */
+
+.about-sector:nth-child(1),
+.about-sector:nth-child(3) {
+  border-right: 1px solid #d9ddd9;
+}
+
+  .about-sector-divider {
+    height: 25px;
+  }
+
+  .about-sector span {
+    font-size: 12px;
+  }
+
+
+  /* EYEBROW */
+
+  .about-eyebrow {
+    padding-top: 55px;
+  }
+
+
+  /* INTRO */
+
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 20px;
+  }
+
+  .about-intro h2 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .about-intro p {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  /* APPROACH */
+
+  .about-approach {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    margin-top: 45px;
+    padding-bottom: 65px;
+  }
+
+
+  /* FEATURE */
+
+  .about-feature-box {
+    padding: 35px 25px 38px;
+  }
+
+  .about-feature-icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 22px;
+    font-size: 22px;
+  }
+
+  .about-feature-box h3 {
+    font-size: 21px;
+  }
+
+  .about-feature-box p {
+    font-size: 14px;
+  }
+
+
+  /* RIGHT POINTS */
+
+  .about-site-point h3 {
+    font-size: 21px;
+  }
+
+  .about-site-point p {
+    font-size: 14px;
+  }
+
+}
